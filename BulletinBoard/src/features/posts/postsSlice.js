@@ -1,4 +1,4 @@
-// Notes: ref line 26
+// Notes:
 // state.push - This is mutating state using immer.js. This is built under the hood in React.
 // immer (German for: always) is a tiny package that allows you to work with immutable state in a more convenient way.
 // payload is the form data that we send / dispatch our post add
@@ -11,7 +11,7 @@ const POSTS_URL = 'https://jsonplaceholder.typicode.com/posts'
 
 const initialState = {
   posts: [],
-  status: 'idle', // 'idle' | 'loading' | 'succeeded' | 'failed'
+  status: 'idle', //'idle' | 'loading' | 'succeeded' | 'failed'
   error: null
 }
 
@@ -25,7 +25,7 @@ export const fetchPosts = createAsyncThunk('posts/fetchPosts', async () => {
 export const addNewPost = createAsyncThunk(
   'posts/addNewPost',
   async initialPost => {
-    const response = await axios.get(POSTS_URL, initialPost)
+    const response = await axios.post(POSTS_URL, initialPost)
     return response.data
   }
 )

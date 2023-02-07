@@ -22,7 +22,7 @@ const PostsList = () => {
 
   let content
   if (postStatus === 'loading') {
-    content = <p>'Loading...'</p>
+    content = <p>Loading...</p>
   } else if (postStatus === 'succeeded') {
     // prettier-ignore
     const orderedPosts = posts.slice().sort((a, b) => b.date.localeCompare(a.date))
