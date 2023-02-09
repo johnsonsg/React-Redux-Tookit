@@ -12,7 +12,8 @@ const POSTS_URL = 'https://jsonplaceholder.typicode.com/posts'
 const initialState = {
   posts: [],
   status: 'idle', //'idle' | 'loading' | 'succeeded' | 'failed'
-  error: null
+  error: null,
+  count: 0
 }
 
 // create async thunk - fetch Posts
