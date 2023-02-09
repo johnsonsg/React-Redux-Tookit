@@ -22,6 +22,18 @@ body {
   /* place-content: center; */
 }
 
+a,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  color: #fff;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -106,15 +118,17 @@ nav ul li {
   margin-right: 1rem;
 }
 
-nav a, nav a:visited {
+nav a,
+nav a:visited {
   color: #fff;
   text-decoration: none;
 }
 
-nav a:hover, nav a:focus {
+nav a:hover,
+nav a:focus {
   text-decoration: underline;
+  color: #fff;
 }
-
 
 .postCredit {
   font-size: 1rem;
@@ -147,4 +161,3 @@ nav a:hover, nav a:focus {
   background-color: palevioletred;
   color: white;
 }
-
